@@ -1,0 +1,18 @@
+{
+  "url": "./api.json",
+  "remoteUrl": "http://yapi.smart-xwork.cn/api/open/plugin/export-full?type=json&pid=115238&status=all&token=8d1772d386089a0dfb1c81480c4cb99ccf6c7c5e8070d97ffdf5e59f99f31137",
+
+  "type": "yapi",
+  "yapiConfig": {
+  
+  },
+  "swaggerParser": {
+    "-o": "src/services"
+  },
+  "validateResponse": false,
+  "guardConfig": {
+    "mode": "strict",
+    "methodUrl2OperationIdMap": {
+    }
+  }
+}

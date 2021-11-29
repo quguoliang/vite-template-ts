@@ -1,0 +1,72 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "测试项目",
+    "version": "last",
+    "description": "unknown"
+  },
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "public",
+      "description": "公共分类"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/login": {
+      "get": {
+        "tags": [
+          "public"
+        ],
+        "summary": "login",
+        "description": "",
+        "parameters": [
+          {
+            "name": "usename",
+            "in": "query",
+            "required": true,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "required": true,
+            "description": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "number",
+                  "mock": {
+                    "mock": "0"
+                  }
+                },
+                "message": {
+                  "type": "string",
+                  "mock": {
+                    "mock": "成功"
+                  }
+                },
+                "result": {
+                  "type": "boolean"
+                }
+              },
+              "title": "Login"
+            }
+          }
+        }
+      }
+    }
+  }
+}
